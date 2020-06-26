@@ -6,7 +6,7 @@ public List<File> getAllFiles(File rootDir) {
 
       List<File> files = new ArrayList<>();
       for (File child : children) {
-          if (child.__) {
+          if (child.isDirecotory()) {
              files.addAll(getAllFiles(child));
          } else {
              files.add(child);
